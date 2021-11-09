@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categorias",
+  "info": {
+    "name": "categorias"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "nome"
+    },
+    "subcategorias": {
+      "via": "categoria",
+      "collection": "subcategorias"
+    },
+    "publicacoes": {
+      "via": "categoria",
+      "collection": "publicacoes"
+    }
+  }
+}

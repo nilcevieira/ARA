@@ -1,0 +1,73 @@
+{
+  "kind": "collectionType",
+  "collectionName": "publicacoes",
+  "info": {
+    "name": "publicações",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titulo": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "resumo": {
+      "type": "text",
+      "required": true,
+      "unique": true,
+      "maxLength": 240
+    },
+    "texto": {
+      "type": "richtext",
+      "required": true,
+      "unique": false
+    },
+    "acessos_rapido": {
+      "model": "acessos-rapidos",
+      "via": "publicacoes"
+    },
+    "categoria": {
+      "model": "categorias",
+      "via": "publicacoes"
+    },
+    "subcategoria": {
+      "model": "subcategorias",
+      "via": "publicacoes"
+    },
+    "tags": {
+      "type": "string",
+      "default": "Ex: Tag1, Tag2, Tag3 ... TagN"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "titulo",
+      "required": true
+    },
+    "anexos": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "capa": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    }
+  }
+}

@@ -1,0 +1,39 @@
+import gql from "graphql-tag";
+export const QUERY_NAVEGATION = gql`
+query Index{
+    categorias{
+      id
+      nome
+      subcategorias{
+        id
+        nome
+        slug
+      }
+    }
+    headers{
+      id
+      Imagem{
+        url
+      }
+    }
+    acessosRapidos{
+      id
+      nome
+      slug
+      icone{
+        url
+      }
+    }
+    destaques{
+      id
+      nome,
+      link,
+      capa{
+        url
+      }
+    }
+    footer{
+      rodape
+    }
+  }
+`

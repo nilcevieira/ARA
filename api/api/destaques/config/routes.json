@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/destaques",
+      "handler": "destaques.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/destaques/count",
+      "handler": "destaques.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/destaques/:id",
+      "handler": "destaques.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/destaques",
+      "handler": "destaques.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/destaques/:id",
+      "handler": "destaques.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/destaques/:id",
+      "handler": "destaques.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

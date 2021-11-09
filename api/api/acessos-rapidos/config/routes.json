@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/acessos-rapidos",
+      "handler": "acessos-rapidos.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/acessos-rapidos/count",
+      "handler": "acessos-rapidos.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/acessos-rapidos/:id",
+      "handler": "acessos-rapidos.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/acessos-rapidos",
+      "handler": "acessos-rapidos.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/acessos-rapidos/:id",
+      "handler": "acessos-rapidos.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/acessos-rapidos/:id",
+      "handler": "acessos-rapidos.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

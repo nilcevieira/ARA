@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "footers",
+  "info": {
+    "name": "Footer"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "rodape": {
+      "type": "richtext",
+      "required": true,
+      "unique": true
+    }
+  }
+}
