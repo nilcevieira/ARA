@@ -1,5 +1,5 @@
-import gql from "graphql-tag";
-export const QUERY_NAVEGATION = gql`
+import gql from "graphql-tag"
+export const QUERY_INDEX = gql`
 query Index{
     categorias{
       id
@@ -21,6 +21,15 @@ query Index{
       nome
       slug
       icone{
+        url
+      }
+    }
+    publicacoes(limit:5, sort: "id:desc"){
+      id
+      titulo
+      resumo
+      slug
+      capa{
         url
       }
     }

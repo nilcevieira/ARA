@@ -1,4 +1,5 @@
-import styled from "styled-components";
+import styled from "styled-components"
+
 
 export const Container = styled.div`
   width: 100%;
@@ -7,13 +8,15 @@ export const Container = styled.div`
   @media (max-width: 800px){
     height: 3.6rem;
   }
-`;
+`
+
 export const Form = styled.div`
   height: 100%;
   width: 100%;
   display: flex;
   margin: 0;
-`;
+`
+
 export const InputText = styled.input`
   padding: 0;
   padding-left: 5px;
@@ -26,15 +29,15 @@ export const InputText = styled.input`
   font-size: 1.6rem;
   color: #0D0D0D;
   ::placeholder {
-    /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #0D0D0D;
   }
   @media (max-width: 1100px){
     border: 0.15rem solid #000030;
     font-size: 1.4rem;
   }
-`;
-export const Button = styled.a`
+`
+
+export const SubmitButton = styled.a`
   height: 100%;
   width: 12rem;
   background: linear-gradient(90deg, rgba(0,0,17,1) 0%, rgba(0,0,48,1) 100%);
@@ -62,7 +65,8 @@ export const Button = styled.a`
       border:0.15rem solid #000011;
     }
   }
-`;
-export const Text = styled.p`
+`
+
+export const TextButton = styled.p`
   margin: 0px;
-`;
+`

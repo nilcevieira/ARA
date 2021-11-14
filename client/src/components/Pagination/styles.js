@@ -1,24 +1,28 @@
-import styled from "styled-components";
-export const Container = styled.div`
+import styled from "styled-components"
+
+
+export const ContainerPagination = styled.div`
   width: 74%;
   align-items: center;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: max(2vh, 2vw);
-`;
-export const Items = styled.tr`
+  margin-bottom: 4.2rem;
+`
+
+export const NumberList = styled.tr`
   border-radius: 3px;
   box-sizing: border-box;
   overflow: hidden;
-`;
-export const Page = styled.td`
+`
+
+export const PageNumber = styled.td`
   background: #000030;
-`;
-export const Link = styled.a`
-  margin: 0 0.1vw 0 0.1vw;
-  padding: 0 1vw 0 1vw;
+`
+export const PagingLink = styled.a`
+  margin: 0 0.2rem 0 0.2rem;
+  padding: 0 1rem 0 1rem;
   text-decoration: none;
   :visited {
     color: #e7e7e7;
@@ -29,4 +33,4 @@ export const Link = styled.a`
   :hover {
     color: #ff9c00;
   }
-`;
+`

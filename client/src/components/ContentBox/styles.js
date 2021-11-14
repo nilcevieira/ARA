@@ -1,38 +1,41 @@
-import styled from "styled-components";
-export const Container = styled.div`
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0px;
-  background-color: #e7e7e7;
-`;
+import styled from "styled-components"
 
-export const Box = styled.div`
+export const Container = styled.div`
+  background-color: #e7e7e7;
+`
+
+export const CentralBox = styled.div`
   margin: 0 auto;
-  width: 85%; /* Valor da Largura */
+  width: 85%;
   max-width: 1360px;
-`;
-export const BoxCenter = styled.div`
-  margin: 0 auto;
-  width: 100%; /* Valor da Largura */
-  max-width: 100%;
+`
+
+/**
+ * The MainBox will receive: publications, search and quick access.
+ */
+export const MainBox = styled.div`
+  width: 100%; 
   display: flex;
+  /**
+  At 800px, the contents of the MainBox are shown in reverse order, putting search
+  and quick access at the top of the page.
+  */
   @media (max-width: 800px){
     flex-direction: column-reverse;
   }
-`;
-export const BoxRight = styled.div`
+`
+export const RightBox = styled.div`
   width: 25%;
   margin-left: 0.9vw;
   margin-top: 1vw;
   padding-left: 2vw;
+
   @media (max-width:800px){
     margin-left:0;
     width: 100%;
   }
+
   @media (max-width:900px){
     padding: 0;
   }
-`;
+`

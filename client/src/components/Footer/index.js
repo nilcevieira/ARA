@@ -1,23 +1,29 @@
-import { Container, Content } from "./style";
-import { URL_UPLOADS } from "../../Url/urls";
+/* eslint-disable react/prop-types */
+import React from "react"
+import { Container, FooterContent } from "./style"
+import { URL_UPLOADS } from "../../Url/urls"
 
+/**
+ * 
+ * @param {*} footerData It's a html text created by CKEditor 5.
+ * @returns Component 'Footer', witch contains all information regarding the page footer.
+ */
+export default function Footer({ footerData }) {
+// Check whether content was created  
+	if (footerData == null) {
+		return (
+			<Container>
+				<FooterContent />
+			</Container>
+		)
+	}
 
-export default function Footer({ dataFooter }) {
+	else {
+		return (
+			<Container>
+				<FooterContent dangerouslySetInnerHTML={{ __html: footerData.rodape.replace("/uploads/", URL_UPLOADS) }} />
+			</Container>
+		)
 
-  if (dataFooter == null) {
-    return (
-      <Container>
-        <Content />
-      </Container>
-    );
-  }
-
-  else {
-    return (
-      <Container>
-        <Content dangerouslySetInnerHTML={{ __html: dataFooter.rodape.replace("/uploads/", URL_UPLOADS) }} />
-      </Container>
-    );
-
-  }
+	}
 }

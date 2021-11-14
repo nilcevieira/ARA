@@ -1,5 +1,5 @@
-import gql from "graphql-tag";
-export const QUERY_POST_MENU = gql`
+import gql from "graphql-tag"
+export const QUERY_POST_COMPLEMENT = gql`
 query Index{
     categorias{
       id

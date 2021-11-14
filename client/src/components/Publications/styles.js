@@ -1,9 +1,9 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const Container = styled.div`
   margin-top: 1vw;
   width: 74%;
-  min-height: 54vh;
+  min-height: 100rem;
   display: flex;
   border-radius: 5px;
   flex-wrap: wrap;
@@ -11,8 +11,9 @@ export const Container = styled.div`
   @media (max-width: 800px){
     width: 100%;
   }
-`;
-export const Span = styled.div`
+`
+
+export const SectionTitle = styled.div`
   width: 100%;
   height: 4.2rem;
   border-left: 0.6rem solid #000011;
@@ -26,9 +27,9 @@ export const Span = styled.div`
   @media(max-width:1100px){
     font-size: 1.4rem;
   }
-`;
+`
 
-export const Post = styled.a`
+export const Publication = styled.a`
   width: 100%;
   height: 20rem;
   border-radius: 5px;
@@ -43,13 +44,13 @@ export const Post = styled.a`
   :link {
     color: black;
   }
-
   @media (max-width: 1100px){
     height: 15rem;
     border: 0.15rem solid #0d0d0d;
   }
-`;
-export const Cover = styled.div`
+`
+
+export const PublicationCover = styled.div`
   overflow: hidden;
   height: 100%;
   width: 20rem;
@@ -57,20 +58,23 @@ export const Cover = styled.div`
   border-right: max(0.1vw, 0.1vh) solid #0d0d0d;
   box-sizing: border-box;
   @media (max-width: 1100px){width: 15rem}
-`;
-export const Img = styled.img`
+`
+
+export const CoverImage = styled.img`
   height:100%;
   width: 100%;
-`;
-export const Title = styled.h3`
+`
+
+export const PublicationTitle = styled.h3`
   margin-bottom: max(0.1vw, 0.1vh);
   font-size: 1.6rem;
   color: #0d0d0d;
   @media(max-width:1100px){
     font-size: 1.4rem;
   }
-`;
-export const ShortDesc = styled.p`
+`
+
+export const ShortDescription = styled.p`
   width: 100%;
   font-size: 1.4rem;
   color: #0d0d0d;
@@ -80,8 +84,9 @@ export const ShortDesc = styled.p`
   }
 
   
-`;
-export const Description = styled.div`
+`
+
+export const DescriptionContainer = styled.div`
   width: 72%;
   float: left;
   justify-content: center center;
@@ -89,9 +94,9 @@ export const Description = styled.div`
   justify-content: center;
   padding-left: 3%;
   padding-right: 3%;
-`;
+`
 
 export const Error = styled.h3`
   font-size: 1.4rem;
   margin-left: 1vw;
-`;
+`
