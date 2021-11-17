@@ -8,7 +8,7 @@ export const NavigationArea = styled.nav`
     rgba(0, 0, 48, 1) 100%
   );
   width: 100%;
-  min-height: 4.2rem;
+  height: 4.2rem;
   color: #e7e7e7;
   display: flex;
   justify-content: center;
@@ -123,14 +123,18 @@ export const SubcategoryName = styled.a`
 
 export const LogoLink = styled.a`
   height: 75%;
+  display: inline-flex;
+  vertical-align: middle;
   @media (max-width:800px){
+    height: 60%;
     text-align: center;
+    justify-content: center;
     width: 200px;
   }
 `
 
 export const ImageLogo = styled.img`
-  height: 100%;
+  height:100%;
 `
 
 export const ContainerLogo = styled.li`
@@ -139,20 +143,20 @@ export const ContainerLogo = styled.li`
   display: flex;
   flex-direction:row;
   align-items:center;
-  :hover > ul {
-    display: block;
-  }
-  padding: 0px;
   z-index: 10;
   @media (max-width:800px){
     display: none;
+    align-content: center;
     width: 200px;
     background: linear-gradient(
     90deg,
     rgba(0, 0, 17, 1) 0%,
     rgba(0, 0, 48, 1) 100%
     );
+    
   }
+ 
+
 `
 
 export const MenuMobileButton = styled.li`

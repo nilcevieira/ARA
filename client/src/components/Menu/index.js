@@ -62,10 +62,10 @@ function showMenu(){
 	if (typeof window !== "undefined") {
 		let elements = document.getElementsByClassName("item-resp")
 		Array.prototype.filter.call(elements, (element) => {
-			if (element.style.display == "none") {
-				element.style.display = "block"
+			if (element.style.display == "none" || element.style.display == "") {
+				element.style.display = "grid"
 			} else {
-				element.style.display = "none"
+				element.style.display = ""
 			}
 		})
 	}
