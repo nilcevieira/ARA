@@ -1,7 +1,8 @@
 import styled from "styled-components"
+import { COLORS } from "../../theme/colors"
 
 export const Container = styled.div`
-  background-color: #e7e7e7;
+  background-color: ${COLORS.gray.lightGray};
 `
 
 export const CentralBox = styled.div`

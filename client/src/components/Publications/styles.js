@@ -1,5 +1,5 @@
 import styled from "styled-components"
-
+import { COLORS } from "../../theme/colors"
 export const Container = styled.div`
   margin-top: 1vw;
   width: 74%;
@@ -16,12 +16,12 @@ export const Container = styled.div`
 export const SectionTitle = styled.div`
   width: 100%;
   height: 4.2rem;
-  border-left: 0.6rem solid #000011;
+  border-left: 0.6rem solid ${COLORS.green.darkGreen};
   font-size: 1.6rem;
   font-weight: bold;
   display: flex;
   align-items: center;
-  color: #0d0d0d;
+  color: ${COLORS.black};
   border-radius: 3px;
   padding-left: 10px;
   @media(max-width:1100px){
@@ -33,20 +33,20 @@ export const Publication = styled.a`
   width: 100%;
   height: 20rem;
   border-radius: 5px;
-  border: 0.2rem solid #0d0d0d;
+  border: 0.2rem solid ${COLORS.black};
   display: flex;
   margin-bottom: 1vw;
   margin-top: 1vw;
   box-sizing: border-box;
   :visited {
-    color: black;
+    color: ${COLORS.black};
   }
   :link {
-    color: black;
+    color: ${COLORS.black};
   }
   @media (max-width: 1100px){
     height: 15rem;
-    border: 0.15rem solid #0d0d0d;
+    border: 0.15rem solid ${COLORS.black};
   }
 `
 
@@ -55,7 +55,7 @@ export const PublicationCover = styled.div`
   height: 100%;
   width: 20rem;
   border-radius: 5px 0px 0px 5px;
-  border-right: max(0.1vw, 0.1vh) solid #0d0d0d;
+  border-right: max(0.1vw, 0.1vh) solid ${COLORS.black};
   box-sizing: border-box;
   @media (max-width: 1100px){width: 15rem}
 `
@@ -68,7 +68,7 @@ export const CoverImage = styled.img`
 export const PublicationTitle = styled.h3`
   margin-bottom: max(0.1vw, 0.1vh);
   font-size: 1.6rem;
-  color: #0d0d0d;
+  color: ${COLORS.black};
   @media(max-width:1100px){
     font-size: 1.4rem;
   }
@@ -77,7 +77,7 @@ export const PublicationTitle = styled.h3`
 export const ShortDescription = styled.p`
   width: 100%;
   font-size: 1.4rem;
-  color: #0d0d0d;
+  color: ${COLORS.black};
   text-align: justify;
   @media(max-width:1100px){
     font-size: 1.3rem;

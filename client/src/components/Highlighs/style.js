@@ -1,17 +1,18 @@
 import styled from "styled-components"
+import { COLORS } from "../../theme/colors"
 
 export const Container = styled.div`
-  background-color: #F2F2F2;
+  background-color: ${COLORS.white};
   width: 100%;
   min-height: 100px;
 `
 export const HighlightLink = styled.a`
   text-decoration: none;
   :visited {
-    color: #f2f2f2;
+    color: ${COLORS.white};
   }
   :link {
-    color: #f2f2f2;
+    color: ${COLORS.white};
   }
 `
 export const Image = styled.img`

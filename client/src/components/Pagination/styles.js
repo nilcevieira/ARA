@@ -1,5 +1,5 @@
 import styled from "styled-components"
-
+import {COLORS}  from "../../theme/colors"
 
 export const ContainerPagination = styled.div`
   width: 74%;
@@ -18,19 +18,17 @@ export const NumberList = styled.tr`
 `
 
 export const PageNumber = styled.td`
-  background: #000030;
+  background: ${COLORS.green.darkGreen};
 `
 export const PagingLink = styled.a`
   margin: 0 0.2rem 0 0.2rem;
   padding: 0 1rem 0 1rem;
   text-decoration: none;
   :visited {
-    color: #e7e7e7;
+    color: ${COLORS.white};
   }
   :link {
-    color: #e7e7e7;
+    color: ${COLORS.white};
   }
-  :hover {
-    color: #ff9c00;
-  }
+
 `

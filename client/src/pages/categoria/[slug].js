@@ -57,22 +57,23 @@ export async function getServerSideProps(context) {
 	const { slug } = context.query
 	let { page } = context.query
 	let itemsPerPage = 20
-	if (!page) {page = 1}
-	let queryCategories = getPostsCategories(slug,itemsPerPage, page)
+	if (!page) page = 1
+	let queryCategories = getPostsCategories(slug, itemsPerPage, page)
 	
-	const posts_categoria = await apolloClient.query({
+	const postsCategorie = await apolloClient.query({
 		query: queryCategories,
 	})
-	let total = posts_categoria.data.publicacoesConnection.aggregate.count
+	let total = postsCategorie.data.publicacoesConnection.aggregate.count
 	let maximumPagination = Math.ceil(total/itemsPerPage)
-	if (Object.values(posts_categoria.data.publicacoes).length == 1 && page == 1) {
-		context.res.writeHead(302, {Location: `/post/${posts_categoria.data.publicacoes[0].slug}`})
+	if (Object.values(postsCategorie.data.publicacoes).length == 1 && page == 1) {
+		context.res.writeHead(302, {Location: `/post/${postsCategorie.data.publicacoes[0].slug}`})
 		context.res.end()
+
 	}
 	return {
 		props: {
 			index: index,
-			post: posts_categoria,
+			post: postsCategorie,
 			page: page,
 			maximumPagination: maximumPagination,
 			initialApoloState: apolloClient.cache.extract(),

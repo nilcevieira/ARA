@@ -1,10 +1,11 @@
 import styled from "styled-components"
+import { COLORS } from "../../theme/colors"
 
 
 export const Slider = styled.div`
   width: 100%;
   min-height: 100px;
-  background-color: #F2F2F2;
+  background-color: ${COLORS.white};
 `
 
 export const Image = styled.img`

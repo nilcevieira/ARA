@@ -1,18 +1,18 @@
 import styled from "styled-components"
-
+import { COLORS } from "../../theme/colors"
 
 export const Container = styled.div`
   width: 100%;
   margin-bottom: 2vw;
   display: flex;
   flex-wrap: wrap;
-  border-left: 0.2rem solid #000011;
-  border-right: 0.2rem solid #000011;
+  border-left: 0.2rem solid ${COLORS.black};
+  border-right: 0.2rem solid ${COLORS.black};
   box-sizing: border-box;
   
   @media (max-width: 1100px){
-    border-left: 0.15rem solid #000011;
-    border-right: 0.15rem solid #000011;
+    border-left: 0.15rem solid ${COLORS.black};
+    border-right: 0.15rem solid ${COLORS.black};
   }
   @media (max-width: 800px){
     border: 0px;
@@ -23,21 +23,21 @@ export const SectionTitle = styled.div`
   width: 100%;
   height: 4.2rem;
   font-size: 1.6rem;
-  border-bottom: .3rem solid #000011;
+  border-bottom: .3rem solid ${COLORS.black};
   font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #0D0D0D;
+  color: ${COLORS.black};
   padding-left: 10px;
   @media (max-width: 1100px){
-    border-bottom: .2rem solid #000011;
+    border-bottom: .2rem solid ${COLORS.black};
     font-size: 1.4rem;
   }
   @media (max-width: 800px){
     justify-content: left;
     border: 0;
-    border-left: .6rem solid #000011;
+    border-left: .6rem solid ${COLORS.black};
     border-radius: 3px;
   }
 `
@@ -89,9 +89,9 @@ export const Link = styled.a`
   text-decoration: none;
   font-weight: bold;
   :visited {
-    color: #0D0D0D;
+    color: ${COLORS.black};
   }
   :link {
-    color: #0D0D0D;
+    color: ${COLORS.black};
   }
 `

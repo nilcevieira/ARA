@@ -10,9 +10,10 @@ import {
 	Category,
 	ImageLogo,
 	LogoLink,
-	MenuMobileButton,
-	ContentButton,
+	MenuHamburger,
+	ContentHamburger,
 	ContainerLogo,
+	LineHamburger,
 } from "./styles.js"
 import { URL_BASE_CLIENT } from "../../Url/urls.js"
 import React from "react"
@@ -27,11 +28,15 @@ export default function MenuBar({ menuData }) {
 		<>
 			<NavigationArea>
 				<Menu>
-					<MenuMobileButton>
-						<ContentButton onClick={showMenu}> MENU </ContentButton>
-					</MenuMobileButton>
+					<MenuHamburger>
+						<ContentHamburger onClick={showMenu}>
+							<LineHamburger></LineHamburger>
+							<LineHamburger></LineHamburger>
+							<LineHamburger></LineHamburger>
+						</ContentHamburger>
+					</MenuHamburger>
 					<ContainerLogo className="item-resp">
-						<LogoLink href={URL_BASE_CLIENT}><ImageLogo src="/images/logo_ara_branca.png"></ImageLogo></LogoLink>
+						<LogoLink href={URL_BASE_CLIENT}><ImageLogo src="/images/logo_ara_cinza.png"></ImageLogo></LogoLink>
 					</ContainerLogo>
 					{menuData.map((item) => (
 						<Category className="item-resp">
