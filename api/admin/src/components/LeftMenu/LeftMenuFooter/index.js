@@ -17,7 +17,7 @@ function LeftMenuFooter({ version }) {
     <Wrapper>
       <div className="poweredBy">
         <A key="website" href="" target="" rel="noopener noreferrer">
-          Desenvolvido por Saucedo
+          ARA - IFMT/UFMT
         </A>
       </div>
     </Wrapper>
