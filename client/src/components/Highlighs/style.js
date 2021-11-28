@@ -2,9 +2,7 @@ import styled from "styled-components"
 import { COLORS } from "../../theme/colors"
 
 export const Container = styled.div`
-  background-color: ${COLORS.white};
   width: 100%;
-  min-height: 100px;
 `
 export const HighlightLink = styled.a`
   text-decoration: none;

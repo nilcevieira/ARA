@@ -42,8 +42,7 @@ export const Category = styled.li`
     display: none;
     align-items:center;
     background: ${COLORS.white};
-    min-width: 200px;
-    width: 200px;
+    width: 150px;
     :hover > ul {
       display: grid;
     } 
@@ -77,9 +76,9 @@ export const SubcategoryList = styled.ul`
   transition: all 0.5s linear;
   // The menu shifted to the right. At 800px, the mobile version is activated
   @media (max-width:800px){
-    left:200px;
+    left:150px;
     top: 0;
-    width: 200px;
+    width: 150px;
   }
 `
 
@@ -121,7 +120,7 @@ export const LogoLink = styled.a`
     height: 60%;
     text-align: center;
     justify-content: center;
-    width: 200px;
+    width: 150px;
   }
 `
 
@@ -139,7 +138,7 @@ export const ContainerLogo = styled.li`
   @media (max-width:800px){
     display: none;
     align-content: center;
-    width: 200px;
+    width: 150px;
     background: ${COLORS.white};
     
   }

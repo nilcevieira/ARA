@@ -57,6 +57,7 @@ export const PublicationCover = styled.div`
   border-radius: 5px 0px 0px 5px;
   border-right: max(0.1vw, 0.1vh) solid ${COLORS.black};
   box-sizing: border-box;
+  flex-shrink: 0;
   @media (max-width: 1100px){width: 15rem}
 `
 
@@ -82,18 +83,22 @@ export const ShortDescription = styled.p`
   @media(max-width:1100px){
     font-size: 1.3rem;
   }
+  @media(max-width:500px){
+    display: none;
+  }
 
   
 `
 
 export const DescriptionContainer = styled.div`
-  width: 72%;
+  width: 70%;
   float: left;
   justify-content: center center;
   justify-items: center;
   justify-content: center;
   padding-left: 3%;
   padding-right: 3%;
+  overflow: hidden;
 `
 
 export const Error = styled.h3`

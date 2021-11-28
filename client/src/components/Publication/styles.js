@@ -8,7 +8,7 @@ export const Container = styled.div`
     font-size:1.4rem;
   }
   @media (max-width: 800px){
-    max-width: 100%;
+    width: 100%;
   }
   
 `
