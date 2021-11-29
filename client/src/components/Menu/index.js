@@ -36,7 +36,7 @@ export default function MenuBar({ menuData }) {
 						</ContentHamburger>
 					</MenuHamburger>
 					<ContainerLogo className="item-resp">
-						<LogoLink href={URL_BASE_CLIENT}><ImageLogo src="/images/logo_ara_cinza.png"></ImageLogo></LogoLink>
+						<LogoLink href={URL_BASE_CLIENT}><ImageLogo src="/images/logo_ara_branca.png"></ImageLogo></LogoLink>
 					</ContainerLogo>
 					{menuData.map((item) => (
 						<Category className="item-resp">

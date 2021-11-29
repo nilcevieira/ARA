@@ -3,10 +3,10 @@ import { COLORS } from "../../theme/colors"
 
 export const NavigationArea = styled.nav`
   font-size: 1.6rem;
-  background: ${COLORS.white};
+  background: ${COLORS.blue};
   width: 100%;
   height: 4.2rem;
-  color: ${COLORS.black};
+  color: ${COLORS.white};
   display: flex;
   justify-content: center;
   @media (max-width:1100px) {
@@ -41,11 +41,12 @@ export const Category = styled.li`
   @media (max-width:800px){
     display: none;
     align-items:center;
-    background: ${COLORS.white};
+    background: ${COLORS.blue};
     width: 150px;
     :hover > ul {
       display: grid;
     } 
+
   }
   
 `
@@ -55,10 +56,10 @@ export const Subcategory = styled.li`
   align-items:center;
   min-height: 4.2rem;
   min-width: 15rem;
-  background: ${COLORS.white};
-  border-left: 5px solid ${COLORS.white};
+  background: ${COLORS.blue};
+  border-left: 5px solid ${COLORS.blue};
   :hover {
-    border-color: ${COLORS.orange.lightOrange};
+    border-color: ${COLORS.orange};
   }
   @media (max-width:800px){
     min-height: 4.2rem;
@@ -66,11 +67,11 @@ export const Subcategory = styled.li`
 `
 
 export const SubcategoryList = styled.ul`
-  color: ${COLORS.black};
+  color: ${COLORS.white};
   top: 4.2rem;
   list-style: none;
   position: absolute;
-  background-color: ${COLORS.white};
+  background-color: ${COLORS.blue};
   display: none;
   padding: 0px;
   transition: all 0.5s linear;
@@ -91,7 +92,7 @@ export const CategoryName = styled.a`
   margin: 0px;
   transition: all 0.2s linear;
   :hover {
-    color: ${COLORS.orange.lightOrange};
+    color: ${COLORS.orange};
     cursor: pointer;
   }
 `
@@ -101,13 +102,13 @@ export const SubcategoryName = styled.a`
   text-decoration: none;
   padding-left: 1.5rem;
   :visited {
-    color: ${COLORS.black};
+    color: ${COLORS.white};
   }
   :link {
-    color: ${COLORS.black};
+    color: ${COLORS.white};
   }
   :hover {
-    color: ${COLORS.orange.lightOrange};
+    color: ${COLORS.orange};
   }
 `
 
@@ -139,7 +140,7 @@ export const ContainerLogo = styled.li`
     display: none;
     align-content: center;
     width: 150px;
-    background: ${COLORS.white};
+    background: ${COLORS.blue};
     
   }
  
@@ -157,7 +158,7 @@ export const MenuHamburger = styled.li`
   }
 `
 export const LineHamburger = styled.div`
-  background-color: ${COLORS.black};
+  background-color: ${COLORS.white};
   height: 0.4rem;
   width: 3.6rem;
   border-radius: 5px;
@@ -174,7 +175,7 @@ export const ContentHamburger = styled.a`
   transition: all 0.2s linear;
   height: 75%;
   :hover {
-    color: ${COLORS.orange.lightOrange};
+    color: ${COLORS.orange};
     cursor: pointer;
   }
 `

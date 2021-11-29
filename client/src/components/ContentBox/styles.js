@@ -2,7 +2,7 @@ import styled from "styled-components"
 import { COLORS } from "../../theme/colors"
 
 export const Container = styled.div`
-  background-color: ${COLORS.gray.lightGray};
+  background-color: ${COLORS.white};
 `
 
 export const CentralBox = styled.div`
@@ -15,8 +15,11 @@ export const CentralBox = styled.div`
  * The MainBox will receive: publications, search and quick access.
  */
 export const MainBox = styled.div`
+
+  box-sizing: border-box;
   width: 100%; 
   display: flex;
+  background-color: ${COLORS.white};
   /**
   At 800px, the contents of the MainBox are shown in reverse order, putting search
   and quick access at the top of the page.
@@ -24,6 +27,7 @@ export const MainBox = styled.div`
   @media (max-width: 800px){
     flex-direction: column-reverse;
   }
+
 `
 export const RightBox = styled.div`
   width: 25%;

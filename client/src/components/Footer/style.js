@@ -1,10 +1,10 @@
 import styled from "styled-components"
 import { COLORS } from "../../theme/colors"
 export const Container = styled.div`
-  background: linear-gradient(180deg, ${COLORS.green.darkGreen} 0%, ${COLORS.green.lightGreen} 100%);
+  background: ${COLORS.blue};
   min-height: 20rem;
   width: 100%;
-  color: ${COLORS.gray.lightGray};
+  color: ${COLORS.white};
   font-size: 1.6rem;
 `
 export const FooterContent = styled.div`

@@ -16,9 +16,10 @@ export const Container = styled.div`
 export const SectionTitle = styled.div`
   width: 100%;
   height: 4.2rem;
-  border-left: 0.6rem solid ${COLORS.green.darkGreen};
+  border-left: 0.6rem solid ${COLORS.orange};
   font-size: 1.6rem;
   font-weight: bold;
+  box-shadow: 0px 0px 3px ${COLORS.black};
   display: flex;
   align-items: center;
   color: ${COLORS.black};
@@ -33,7 +34,7 @@ export const Publication = styled.a`
   width: 100%;
   height: 20rem;
   border-radius: 5px;
-  border: 0.2rem solid ${COLORS.black};
+  box-shadow: 0px 0px 3px ${COLORS.black};
   display: flex;
   margin-bottom: 1vw;
   margin-top: 1vw;
@@ -46,7 +47,6 @@ export const Publication = styled.a`
   }
   @media (max-width: 1100px){
     height: 15rem;
-    border: 0.15rem solid ${COLORS.black};
   }
 `
 
@@ -55,7 +55,7 @@ export const PublicationCover = styled.div`
   height: 100%;
   width: 20rem;
   border-radius: 5px 0px 0px 5px;
-  border-right: max(0.1vw, 0.1vh) solid ${COLORS.black};
+  box-shadow: 0px 0px 3px ${COLORS.black};
   box-sizing: border-box;
   flex-shrink: 0;
   @media (max-width: 1100px){width: 15rem}

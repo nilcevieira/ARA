@@ -18,7 +18,7 @@ export const NumberList = styled.tr`
 `
 
 export const PageNumber = styled.td`
-  background: ${COLORS.green.darkGreen};
+  background: ${COLORS.blue};
 `
 export const PagingLink = styled.a`
   margin: 0 0.2rem 0 0.2rem;
