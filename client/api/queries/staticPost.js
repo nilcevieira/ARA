@@ -4,7 +4,7 @@ query Index{
     categorias{
       id
       nome
-      subcategorias{
+      subcategorias(sort:"nome:asc"){
         id
         nome
         slug

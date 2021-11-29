@@ -4,7 +4,7 @@ export const QUERY_MENU = gql`
     categorias {
       id
       nome
-      subcategorias {
+      subcategorias(sort:"nome:asc") {
         id
         nome
         slug
