@@ -3,7 +3,7 @@ import { COLORS } from "../../theme/colors"
 
 export const NavigationArea = styled.nav`
   font-size: 1.6rem;
-  background: ${COLORS.blue};
+  background: ${COLORS.green};
   width: 100%;
   height: 4.2rem;
   color: ${COLORS.white};
@@ -41,7 +41,7 @@ export const Category = styled.li`
   @media (max-width:800px){
     display: none;
     align-items:center;
-    background: ${COLORS.blue};
+    background: ${COLORS.green};
     width: 150px;
     :hover > ul {
       display: grid;
@@ -56,10 +56,10 @@ export const Subcategory = styled.li`
   align-items:center;
   min-height: 4.2rem;
   min-width: 15rem;
-  background: ${COLORS.blue};
-  border-left: 5px solid ${COLORS.blue};
+  background: ${COLORS.green};
+  border-left: 5px solid ${COLORS.green};
   :hover {
-    border-color: ${COLORS.orange};
+    border-color: ${COLORS.orangeLight};
   }
   @media (max-width:800px){
     min-height: 4.2rem;
@@ -71,7 +71,7 @@ export const SubcategoryList = styled.ul`
   top: 4.2rem;
   list-style: none;
   position: absolute;
-  background-color: ${COLORS.blue};
+  background-color: ${COLORS.green};
   display: none;
   padding: 0px;
   transition: all 0.5s linear;
@@ -92,7 +92,7 @@ export const CategoryName = styled.a`
   margin: 0px;
   transition: all 0.2s linear;
   :hover {
-    color: ${COLORS.orange};
+    color: ${COLORS.orangeLight};
     cursor: pointer;
   }
 `
@@ -108,7 +108,7 @@ export const SubcategoryName = styled.a`
     color: ${COLORS.white};
   }
   :hover {
-    color: ${COLORS.orange};
+    color: ${COLORS.orangeLight};
   }
 `
 
@@ -140,7 +140,7 @@ export const ContainerLogo = styled.li`
     display: none;
     align-content: center;
     width: 150px;
-    background: ${COLORS.blue};
+    background: ${COLORS.green};
     
   }
  
@@ -175,7 +175,7 @@ export const ContentHamburger = styled.a`
   transition: all 0.2s linear;
   height: 75%;
   :hover {
-    color: ${COLORS.orange};
+    color: ${COLORS.orangeLight};
     cursor: pointer;
   }
 `

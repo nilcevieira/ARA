@@ -65,6 +65,11 @@ export async function getServerSideProps(context) {
 	})
 	let total = quickAccessPublications.data.publicacoesConnection.aggregate.count
 	let maximumPagination = Math.ceil(total/itensPerPage)
+	if (Object.values(quickAccessPublications.data.publicacoes).length == 1 && page == 1) {
+		context.res.writeHead(302, {Location: `/post/${quickAccessPublications.data.publicacoes[0].slug}`})
+		context.res.end()
+
+	}
 	return {
 		props: {
 			index: index,

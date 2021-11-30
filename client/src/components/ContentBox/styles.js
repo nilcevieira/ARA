@@ -2,7 +2,7 @@ import styled from "styled-components"
 import { COLORS } from "../../theme/colors"
 
 export const Container = styled.div`
-  background-color: ${COLORS.white};
+  background-color: ${COLORS.blueLight};
 `
 
 export const CentralBox = styled.div`
@@ -19,7 +19,7 @@ export const MainBox = styled.div`
   box-sizing: border-box;
   width: 100%; 
   display: flex;
-  background-color: ${COLORS.white};
+  background-color: ${COLORS.blueLight};
   /**
   At 800px, the contents of the MainBox are shown in reverse order, putting search
   and quick access at the top of the page.

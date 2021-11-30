@@ -24,17 +24,17 @@ export const InputText = styled.input`
   height: 100%;
   width: 100%;
   box-sizing: border-box;
-  border: 0.2rem solid ${COLORS.blue};
+  border: 0.2rem solid ${COLORS.green};
   border-radius: 4px 0 0 4px;
   outline: none;
-  background-color: ${COLORS.white};
+  background-color: ${COLORS.blueLight};
   font-size: 1.6rem;
-  color: ${COLORS.blue};
+  color: ${COLORS.green};
   ::placeholder {
-    color: ${COLORS.blue};
+    color: ${COLORS.green};
   }
   @media (max-width: 1100px){
-    border: 0.15rem solid ${COLORS.blue};
+    border: 0.15rem solid ${COLORS.green};
     font-size: 1.4rem;
   }
 `
@@ -43,11 +43,11 @@ export const SubmitButton = styled.a`
   box-sizing: border-box;
   height: 100%;
   width: 12rem;
-  background: ${COLORS.blue};
+  background: ${COLORS.green};
   text-align: center;
   color: ${COLORS.white};
   font-weight: bold;
-  border: 0.2rem solid ${COLORS.blue};
+  border: 0.2rem solid ${COLORS.green};
   border-left: none;
   border-radius: 0 4px 4px 0;
   cursor: pointer;
@@ -57,14 +57,14 @@ export const SubmitButton = styled.a`
   align-items: center;
   justify-content: center;
   :hover{
-      border:0.2rem solid ${COLORS.blue};
+      border:0.2rem solid ${COLORS.green};
       color: ${COLORS.orange};
   }
   @media (max-width: 1100px){
-    border: 0.15rem solid ${COLORS.blue};
+    border: 0.15rem solid ${COLORS.green};
     font-size: 1.4rem;
     :hover{
-      border:0.15rem solid ${COLORS.blue};
+      border:0.15rem solid ${COLORS.green};
     }
   }
 `

@@ -70,7 +70,7 @@ export const Name = styled.li`
 `
 
 export const Image = styled.img`
-  width: 50%;
+  width: 40%;
   @media (max-width: 800px){
     width: 100%;
   }
