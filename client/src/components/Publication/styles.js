@@ -42,8 +42,7 @@ export const Attachment = styled.a`
 border-radius: 3px;
 margin-left: 1rem;
 padding: .4rem;
-background: ${COLORS.green};
-color: ${COLORS.black};
+background: ${COLORS.blue};
 text-decoration: none;
   :visited {
     color: ${COLORS.white};

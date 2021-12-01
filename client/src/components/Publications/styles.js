@@ -14,12 +14,13 @@ export const Container = styled.div`
 `
 
 export const SectionTitle = styled.div`
+  background-color: ${COLORS.orange};
   width: 100%;
   height: 4.2rem;
   border-left: 0.6rem solid ${COLORS.orange};
   font-size: 1.6rem;
   font-weight: bold;
-  box-shadow: 0px 0px 3px ${COLORS.black};
+  box-shadow: 0px 0px 6px ${COLORS.orange};
   display: flex;
   align-items: center;
   color: ${COLORS.black};
@@ -34,7 +35,7 @@ export const Publication = styled.a`
   width: 100%;
   height: 20rem;
   border-radius: 5px;
-  box-shadow: 0px 0px 3px ${COLORS.black};
+  box-shadow: 0px 0px 6px ${COLORS.orange};
   display: flex;
   margin-bottom: 1vw;
   margin-top: 1vw;
@@ -55,7 +56,7 @@ export const PublicationCover = styled.div`
   height: 100%;
   width: 20rem;
   border-radius: 5px 0px 0px 5px;
-  box-shadow: 0px 0px 3px ${COLORS.black};
+  box-shadow: 0px 0px 6px ${COLORS.orange};
   box-sizing: border-box;
   flex-shrink: 0;
   @media (max-width: 1100px){width: 15rem}

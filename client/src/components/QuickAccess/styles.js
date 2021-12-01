@@ -6,16 +6,17 @@ export const Container = styled.div`
   margin-bottom: 2vw;
   display: flex;
   flex-wrap: wrap;
-  box-shadow: 0px 0px 3px ${COLORS.black};
+  box-shadow: 0px 0px 6px ${COLORS.orange};
   border-radius: 5px;
   box-sizing: border-box;
 
 `
 export const SectionTitle = styled.div`
+  background-color: ${COLORS.orange};
   width: 100%;
   height: 4.2rem;
   font-size: 1.6rem;
-  border-bottom: .3rem solid ${COLORS.black};
+  border-bottom: .3rem solid ${COLORS.orange};
   font-weight: bold;
   display: flex;
   align-items: center;

@@ -12,10 +12,10 @@ export default function Publication({ publicationData }) {
 	return publicationData.map((item) => (
 		<Container>
 			<Title>{item.titulo}</Title>
-			<Text dangerouslySetInnerHTML={{ __html: item.texto.replace("/uploads/", URL_UPLOADS) }} />
+			<Text dangerouslySetInnerHTML={{ __html: item.texto.replace(/\/uploads\//g, URL_UPLOADS) }} />
 			<Tags><b>Tags:</b> {item.tags}</Tags>
 			<AttachmentList><b>Anexos:</b>{item.anexos.map((anexo) => (
-				<Attachment target="_blank" href={anexo.url.replace("/uploads/", URL_UPLOADS)}> {anexo.name}</Attachment>
+				<Attachment target="_blank" href={anexo.url.replace(/\/uploads\//g, URL_UPLOADS)}> {anexo.name}</Attachment>
 			))}</AttachmentList>
 		</Container>
 	))

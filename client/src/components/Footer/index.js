@@ -21,7 +21,7 @@ export default function Footer({ footerData }) {
 	else {
 		return (
 			<Container>
-				<FooterContent dangerouslySetInnerHTML={{ __html: footerData.rodape.replace("/uploads/", URL_UPLOADS) }} />
+				<FooterContent dangerouslySetInnerHTML={{ __html: footerData.rodape.replace(/\/uploads\//g, URL_UPLOADS) }} />
 			</Container>
 		)
 

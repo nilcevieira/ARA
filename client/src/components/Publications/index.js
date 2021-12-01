@@ -26,7 +26,7 @@ export default function Publications({publicationsData}) {
 				<SectionTitle>Publicações</SectionTitle>
 				{publicationsData.map((item) => (
 					<Publication href={`${URL_BASE_CLIENT}/post/${item.slug}`}>
-						<PublicationCover><CoverImage src={item.capa.url.replace("/uploads/", URL_UPLOADS)}></CoverImage></PublicationCover>
+						<PublicationCover><CoverImage src={item.capa.url.replace(/\/uploads\//g, URL_UPLOADS)}></CoverImage></PublicationCover>
 						<DescriptionContainer>
 							<PublicationTitle>{item.titulo}</PublicationTitle>
 							<ShortDescription>{item.resumo}</ShortDescription>
